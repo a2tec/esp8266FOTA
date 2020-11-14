@@ -6,7 +6,7 @@
   "examples": "examples/*/*.ino",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/stardusteddy/esp8266FOTA"
   },
   "authors": [
     {
@@ -18,7 +18,6 @@
   ],
   "frameworks": "arduino",
   "platforms": [
-    "esp8266",
-    "espressif8266"
+    "esp8266"
   ]
 }
