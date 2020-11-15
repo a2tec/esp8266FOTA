@@ -14,7 +14,7 @@ checkURL	KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 
-execOTA			KEYWORD2
+execOTA		KEYWORD2
 execHTTPcheck	KEYWORD2
 
 #######################################
