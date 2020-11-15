@@ -56,15 +56,13 @@ const char *password = "";
 
 esp32FOTA esp32FOTA("esp8266-fota-http", 1);
 
-void setup()
-{
+void setup(){
   esp8266FOTA.checkURL = "http://server/fota/fota.json";
   Serial.begin(115200);
   setup_wifi();
 }
 
-void setup_wifi()
-{
+void setup_wifi(){
   delay(10);
   Serial.print("Connecting to ");
   WiFi.begin(ssid, password);
@@ -75,8 +73,7 @@ void setup_wifi()
   }
 }
 
-void loop()
-{
+void loop(){
   bool updatedNeeded = esp8266FOTA.execHTTPcheck();
   if (updatedNeeded)
   {
