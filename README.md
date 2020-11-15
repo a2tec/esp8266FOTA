@@ -77,7 +77,7 @@ void setup_wifi()
 
 void loop()
 {
-  bool updatedNeeded = esp32FOTA.execHTTPcheck();
+  bool updatedNeeded = esp8266FOTA.execHTTPcheck();
   if (updatedNeeded)
   {
     esp8266FOTA.execOTA();
